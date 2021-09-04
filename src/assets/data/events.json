@@ -1,0 +1,18 @@
+[
+    {
+        "date": "14-18 AUG",
+        "title": "Vivid Sydney",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ac sagittis tristique platea praesent leo a porttitor",
+        "more": true
+    },
+    {
+        "date": "16 JUN",
+        "title": "Queen's Birthday",
+        "more": false
+    },
+    {
+        "date": "9 SEP",
+        "title": "Father's Day",
+        "more": false
+    }
+]
