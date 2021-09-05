@@ -20,7 +20,7 @@ export class WhatsOnComponent implements OnInit {
 
   loadEvents(): void {
     this.eventService.getEvents().subscribe((events: any) => {
-      this.events = JSON.parse(events.trim(''));
+      this.events = JSON.parse(events.trim(''))?.slice(0, 3);
       this.selectedEvent = this.events ? this.events[0] : undefined;
     });
   }
