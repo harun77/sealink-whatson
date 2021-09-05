@@ -18,3 +18,12 @@ body {
 .mat-expansion-panel-body {
     padding: 0 !important;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ba9f55;
+}
