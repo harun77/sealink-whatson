@@ -3,11 +3,11 @@
         <h1 class="title">WHAT'S ON</h1>
     </div>
     <div class="image">
-        <img style="height: 100%; width: 100%;" src="../../../assets/vivid-sydney.jpg" alt="vivid-sydney">
+        <img style="height: 100%; width: 100%;" [src]="selectedEvent.image" alt="vivid-sydney">
     </div>
     <div class="event-container">
         <div class="events">
-            <app-event></app-event>
+            <app-event [events]="events"></app-event>
             <button mat-raised-button class="see-all-btn">
                 SEE ALL EVENTS
                 <mat-icon>chevron_right</mat-icon>
