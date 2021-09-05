@@ -46,7 +46,7 @@
     background-color: #ae9339;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 950px) {
     .container {
         height: 100%;
         flex-direction: row;
@@ -79,7 +79,7 @@
 
     .events {
         margin: 0;
-        width: 65%;
+        width: 70%;
         padding: 0 10%;
         padding-top: 25px;
     }
