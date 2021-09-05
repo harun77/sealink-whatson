@@ -3,7 +3,7 @@
         <h1 class="title">WHAT'S ON</h1>
     </div>
     <div class="image">
-        <img style="height: 100%; width: 100%;" [src]="selectedEvent.image" alt="vivid-sydney">
+        <img [src]="selectedEvent?.image" alt="{{ selectedEvent?.title }}">
     </div>
     <div class="event-container">
         <div class="events">
