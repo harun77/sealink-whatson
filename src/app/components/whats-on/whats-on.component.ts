@@ -21,7 +21,7 @@ export class WhatsOnComponent implements OnInit {
   loadEvents(): void {
     this.eventService.getEvents().subscribe((events: any) => {
       this.events = JSON.parse(events.trim(''));
-      this.selectedEvent = this.events ? this.events[0] : [];
+      this.selectedEvent = this.events ? this.events[0] : undefined;
     });
   }
 
