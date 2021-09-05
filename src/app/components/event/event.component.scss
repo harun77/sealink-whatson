@@ -1,14 +1,17 @@
+@import "../../../scss/settings";
+
 :host {
-    background-color: #335c66;
+    background-color: $blue-300;
+    padding: auto;
 }
 
 .container {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .learn {
     background-color: unset;
-    color: #ae9339;
+    color: $gold-300;
     letter-spacing: 2px;
     border-style: none;
     margin: 0;
@@ -17,11 +20,10 @@
 }
 
 mat-divider {
-    background: aliceblue;
-    margin-top: 10px;
+    background: $blue-100;
 }
 
-h1 {
+p {
     margin: 0;
-    font-weight: 500;
+    padding: 0;
 }
