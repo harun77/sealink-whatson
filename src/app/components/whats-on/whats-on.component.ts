@@ -12,6 +12,8 @@ export class WhatsOnComponent implements OnInit {
 
   selectedEvent: any;
 
+  PLACEHOLDER_LINK = 'https://www.sealinktravelgroup.com.au/';
+
   constructor(private eventService: EventService) { }
 
   ngOnInit(): void {
@@ -27,6 +29,10 @@ export class WhatsOnComponent implements OnInit {
 
   openEvent(index: number): void {
     this.selectedEvent = this.events[index];
+  }
+
+  openAll(): void {
+    window.open(this.PLACEHOLDER_LINK, '_blank');
   }
 
 }

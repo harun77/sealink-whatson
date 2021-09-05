@@ -9,6 +9,8 @@ export class EventComponent implements OnInit {
 
   expandedEventIndex = 0;
 
+  PLACEHOLDER_LINK = 'https://www.sealinktravelgroup.com.au/';
+
   @Input('events') events: any;
 
   @Output('open') open = new EventEmitter<number>();
@@ -20,6 +22,10 @@ export class EventComponent implements OnInit {
   expand(index: number) {
     this.expandedEventIndex = index;
     this.open.emit(index);
+  }
+
+  learnMore(): void {
+    window.open(this.PLACEHOLDER_LINK, '_blank');
   }
 
 }
