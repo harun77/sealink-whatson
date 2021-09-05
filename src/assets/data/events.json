@@ -3,19 +3,18 @@
         "date": "14-18 AUG",
         "title": "Vivid Sydney",
         "image": "../../../assets/vivid-sydney.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ac sagittis tristique platea praesent leo a porttitor",
-        "more": true
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ac sagittis tristique platea praesent leo a porttitor"
     },
     {
         "date": "16 JUN",
         "title": "Queen's Birthday",
         "image": "../../../assets/queens-birthday-celebrations.jpg",
-        "more": false
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ac sagittis tristique platea praesent leo a porttitor"
     },
     {
         "date": "9 SEP",
         "title": "Father's Day",
         "image": "../../../assets/fathers-day-dining.jpg",
-        "more": false
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ac sagittis tristique platea praesent leo a porttitor"    
     }
 ]

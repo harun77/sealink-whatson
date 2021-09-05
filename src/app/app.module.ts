@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app/app.component';
 import { EventComponent } from './components/event/event.component';
 import { WhatsOnComponent } from './components/whats-on/whats-on.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { WhatsOnComponent } from './components/whats-on/whats-on.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

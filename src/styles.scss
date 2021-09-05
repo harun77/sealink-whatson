@@ -6,5 +6,20 @@
 // Components
 @import "scss/components/typography";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-expansion-panel,
+mat-expansion-panel * {
+    transition: none !important;
+}
+
+.mat-expansion-panel-body {
+    padding: 0 !important;
+}

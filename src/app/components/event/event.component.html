@@ -1,7 +1,14 @@
-<div class="container" *ngFor="let event of events; last as last">
-    <p>{{ event.date }}</p>
-    <h3>{{ event.title }}</h3>
-    <p>{{ event.description }}</p>
-    <button *ngIf="event.more" mat-button class="learn-btn">LEARN MORE</button>
+<div *ngFor="let event of events; index as index; last as last">
+    <mat-expansion-panel hideToggle [expanded]="index === expandedEventIndex" (afterExpand)="expand(index)">
+        <mat-expansion-panel-header [collapsedHeight]="'auto'">
+            <mat-panel-title>
+                <p>{{ event.date }}</p>
+                <h3>{{ event.title }}</h3>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>{{ event.description }}</p>
+        <button mat-button class="learn-btn">LEARN MORE</button>
+    </mat-expansion-panel>
     <mat-divider *ngIf="!last"></mat-divider>
 </div>

@@ -14,7 +14,7 @@ export class WhatsOnComponent implements OnInit {
 
   constructor(private eventService: EventService) { }
 
-  ngOnInit(): void { 
+  ngOnInit(): void {
     this.loadEvents();
   }
 
@@ -23,6 +23,10 @@ export class WhatsOnComponent implements OnInit {
       this.events = JSON.parse(events.trim(''))?.slice(0, 3);
       this.selectedEvent = this.events ? this.events[0] : undefined;
     });
+  }
+
+  openEvent(index: number): void {
+    this.selectedEvent = this.events[index];
   }
 
 }

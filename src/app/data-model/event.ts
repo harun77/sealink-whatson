@@ -2,6 +2,5 @@ export class EventData {
     "date": string;
     "title": string;
     "image": string;
-    "description"?: string;
-    "more": boolean;
+    "description": string;
 }

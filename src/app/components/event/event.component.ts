@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-event',
@@ -7,10 +7,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EventComponent implements OnInit {
 
+  expandedEventIndex = 0;
+
   @Input('events') events: any;
+
+  @Output('open') open = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit(): void { }
+
+  expand(index: number) {
+    this.expandedEventIndex = index;
+    this.open.emit(index);
+  }
 
 }

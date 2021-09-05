@@ -7,7 +7,7 @@
     </div>
     <div class="event-container">
         <div class="events">
-            <app-event [events]="events"></app-event>
+            <app-event [events]="events" (open)="openEvent($event)"></app-event>
             <button mat-raised-button class="see-all-btn">
                 SEE ALL EVENTS
                 <mat-icon>chevron_right</mat-icon>
