@@ -1,7 +1,7 @@
-<div *ngFor="let event of events; last as last" class="container">
+<div class="container" *ngFor="let event of events; last as last">
     <p>{{ event.date }}</p>
     <h3>{{ event.title }}</h3>
     <p>{{ event.description }}</p>
-    <button *ngIf="event.more" mat-button class="learn">LEARN MORE</button>
+    <button *ngIf="event.more" mat-button class="learn-btn">LEARN MORE</button>
     <mat-divider *ngIf="!last"></mat-divider>
 </div>
